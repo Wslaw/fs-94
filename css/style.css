@@ -1,3 +1,72 @@
+/*          Шрифт підключено      */
+/* ------------------------------ */
+
 body {
   font-family: "Inter", sans-serif;
+}
+
+/* -----------------------------  */
+/* 1.Modern normalize  підключено */
+/* ------------------------------ */
+
+:root {
+  --primary-font: "Inter", sans-serif;
+  --primary-color: #fff;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+/* -----------------------------  */
+/* 2. Обнуляємо стили             */
+/* ------------------------------ */
+\*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  margin-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*       задаємо ширину container      */
+.container {
+  max-width: 1310px;
+  border: 2px dashed #2196f3;
+  padding: 0 15px;
+}
+
+.header {
+}
+
+/*     Задамо Лишці -табіндекс=0, тепер лишка стала интеративна */
+li:focus {
+  background-color: #256563;
+}
+
+.image {
+  width: 200px;
+  height: 400px;
+  background: url(../images/fonBack.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
